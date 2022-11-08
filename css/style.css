@@ -1,15 +1,18 @@
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0;
 }
 body {
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .container {
-    margin: 0px;
-    padding-left: 10vh;
-    padding-right: 10vh;
+    display: flex;
+    flex-grow: 1;
 }
 
 .header {
@@ -18,6 +21,7 @@ body {
     justify-content: space-between;
     padding-top: 15px;
     padding-bottom: 80px;
+    max-width: 1000px;
 }
 
 .header-links {
@@ -35,6 +39,7 @@ a {
     background-color: #1F2937;
     display: flex;
     padding-bottom: 80px;
+    max-width: 1000px;
 }
 .content-1-container {
     padding-right: 18px;
@@ -73,6 +78,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1000px;
 }
 .content-2-header {
     padding-top: 20px;
@@ -106,14 +112,24 @@ button {
     height: 30%;
 }
 .content-3 {
+    border: 2px solid green;
     background: #E5E7EB;
     display: flex;
     flex-direction: column;
-    color: #1F2937;
     font-weight: light italic;
+    max-width: 1000px;
+}
+.famous-quote-1 {
+    color: #1F2937;
+    display: flex;
+    flex-grow: 1;
+    font-size: 24px;
+    padding: 50px;
 }
 
 .footer {
     background-color: #1F2937;
     display: flex;
+    flex-grow: 1;
+    max-width: 1000px;
 }
